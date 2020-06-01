@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  outline: none;
+}
+.wrapper-home {
+  height: 100vh; /*height: 100vh, width 100vw, margin 0 = entire width and height of web page.*/
+  width: 100vw;
+  background: linear-gradient(0deg, rgba(25,170,204,1) 0%, rgba(255,255,255,0) 25%, rgba(25,170,204,1) 100%), url(images/home.jpg)no-repeat;
+  background-position: center;
+  background-size: cover; /* default is auto */
+  font-family: 'PT Sans', sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  height: 100vh; /*min-height allow for content off the bottom of the page*/
+  width: 100vw; /*height: 100vh, width 100vw, margin 0 = entire width and height of web page.*/
+  font-family: 'PT Sans', sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.header-home {
+  flex-shrink: 0; /*IE*/
+  height: 50px;
+  border-bottom: 1px solid  #77d8ee;
+}
+.header{
+  flex-shrink:0; /*IE*/
+  height: 50px;
+  background-color: #19AACC;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+nav a {
+  text-decoration: none;
+  padding: 15px 15px 15px 10px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: white;
+  display: block;
+  text-transform: uppercase;
+}
+.langs ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.langs li{
+  margin: 20px 0 10px 15px;
+}
+.content-home {
+  flex: 1 0 auto; /* wrapper - flex direction:column; */  /*IE*/
+  position: relative;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  color: white;
+  letter-spacing: 3px;
+  text-align: center;
+}
+/*
+.content-title {
+ /* position: absolute;
+  top: 12%;
+  left: 50%; 
+  transform: translateX(-50%);
+}  
+*/
+.content-home h1 {
+  font-weight: 300;
+}
+.content-home h1 strong {
+  font-weight: 700;
+}
+.content-home h4 {
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin: 20px;
+}
+.content-home button {
+  background-color: #19AACC;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 15px 32px;
+  font-size: 18px;
+  border:solid 2px white;
+  cursor: pointer;
+}
+.content-home button:hover {
+  background-color: white;
+  color: #19AACC;
+}
+.update-window{
+  max-width: 400px;
+  font-size: 15px;
+  background-color: #19AACC;
+  margin: auto;
+  margin-top: 50px;
+  padding:15px;
+  border: solid 2px white;
+}
+.update-window h3 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.content-about{
+  color: #4E5556;
+  flex: 1 0 auto;/*IE*/
+}
+.content-about h1{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  color: #4E5556;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 2em;
+}
+.about-info{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 960px;
+  width: 100%; 
+  margin-bottom: 15px;
+}
+.our-hotel{
+  max-width: 450px;
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0px 20px 20px;
+  box-shadow: 0px 0px 10px 0px #cccccc;
+}
+.our-hotel h2{
+  margin-bottom: 10px;
+}
+.about-img img{
+  max-width: 450px;
+  width: 100%;
+  margin: 20px;
+  box-shadow: 0px 0px 10px 0px #cccccc;
+}
+.rooms{
+  max-width: 450px;
+  width: 100%;
+  background-color: #c4e3ed;
+  padding: 20px;
+  margin:0 20px 0 20px;
+}
+.parking{
+  max-width: 450px;
+  width: 100%;
+  background-color: #d2f3f9;
+  padding: 20px;
+  text-align: center;
+}
+.content-gallery{
+  flex: 1 0 auto; /*IE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery{
+  display: flex;
+  flex-direction: column;
+  max-width: 760px;
+  height: auto;
+  border: #19AACC solid 3px;
+  background: #19AACC;
+}
+.main-img{
+  flex:1;
+}
+.main-img img{
+  width: 100%;
+  object-fit: cover;
+}
+.imgs{
+  flex:1;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.imgs img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imgs > div{
+  flex: 1 1 120px;
+}
+/* Fade in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+.content-booking{
+  flex: 1 0 auto; /*IE*/
+  display: flex;
+  position: relative;
+  color: #4E5556;
+  flex-direction: column;
+  align-items: center;
+}
+.content-booking h1{
+  margin: 30px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 2em;
+}
+.booking p{
+  font-size: 20px;
+  text-align: center;
+}
+.booking-form{
+  display: flex;
+  justify-content: center;
+  background-color: #d2f3f9;
+  width: 100%;
+  height: auto;
+  margin: 30px;
+}
+.content-contact {
+  flex: 1 0 auto; /* wrapper - flex direction : column; */ /*IE*/
+  margin-bottom: 20px;
+}
+.content-contact h1{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  color: #4E5556;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 2em;
+}
+.all-info{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.text-info{
+  flex:1;
+  flex-direction: column;
+  max-width: 480px;
+  width: 100%;
+}
+.address{
+  color: #4E5556;
+  font-size: 20px;
+  padding: 20px;
+  background-color: #c4e3ed;
+}
+.transport{
+  background-color: #d2f3f9;
+  color: #4E5556;
+  padding: 20px;
+  font-size: 1em;
+}
+.contact-form {
+  flex:1;
+  background-color: #19AACC;
+  max-width: 480px;
+  width: 100%;
+  padding: 25px;
+}
+.contact-form h2{
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.contact-form .input_field{
+  margin-bottom: 10px;
+}
+.contact-form .input_field input[type="text"],
+.contact-form textarea{
+  width:100%;
+  border: 1px solid white;
+  padding: 10px;
+}
+.contact-form textarea{
+  height: 80px;
+  resize: none; 
+}
+.contact-form .btn input[type="submit"]{
+  border: solid 2px white;
+  margin-top: 15px;
+  padding: 10px;
+  width:100%;
+  background-color: #19AACC;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact-form .btn input[type="submit"]:hover {
+  background-color: white;
+  color: #19AACC;
+}
+.contact-form #error_message{
+  margin-bottom: 20px;
+  padding: 0px;
+  background: #fe8b8e;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;  /*smooth transition effect animation*/
+}
+.map{
+  text-align: center;
+}
+.map iframe {
+  max-width: 960px;
+  width:100%;
+  height: 400px;
+}
+.footer-home{
+  flex-shrink: 0;
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid  #77d8ee;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-home p{
+  margin: auto;
+}
+.footer-home a{
+  text-decoration: none;
+  color:white;
+}
+.footer {
+  flex-shrink: 0;
+  width:100%;
+  height: 50px;
+  background-color: #19AACC;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer p{
+  margin: auto;
+}
+.footer a{
+  text-decoration: none;
+  color:white;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1366px) {
+
+.content-home{
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.about-info{
+  max-width: 800px;
+  font-size: 14px;
+}
+.content-about h1{
+  font-size: 25px;
+  margin: 15px 0 0;
+}
+.our-hotel{
+  max-width: 380px;
+  margin: 10px 0px 10px 10px; /**/
+}
+.about-img img{
+  max-width: 380px;
+  margin: 10px; /**/
+}
+.rooms{
+  max-width: 380px;
+  margin:0 10px 0 10px; /**/
+}
+.parking{
+  max-width: 380px;
+}
+.gallery{
+  max-width: 600px;
+}
+.imgs > div{
+  flex: 1 1 90px;
+}
+.content-contact h1{
+  font-size: 25px;
+  margin:15px 0;
+}
+.all-info{
+  max-width: 800px;
+}
+.text-info{
+  max-width: 400px;
+}
+.contact-form {
+  max-width: 400px;
+}
+.address{
+  font-size: 17px;
+  padding: 15px;
+}
+.transport{
+  font-size: 16px;
+  padding: 15px;
+}
+.map iframe{
+  max-width: 800px;
+}
+}
+@media screen and (max-width: 900px) {
+  .wrapper-home{
+    height: 100%;
+  }
+  .update-window{
+    margin-bottom: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+
+nav ul {
+  display: flex;
+  justify-content: center;  
+}
+.about-info{
+  display: block;
+  text-align: center;
+  max-width: 350px;
+  margin-bottom: 15px;
+}
+.our-hotel{
+  margin: 10px 0 10px 0;
+  box-shadow: none;
+}
+.about-img img{
+  margin: 0 0 10px 0;
+  box-shadow: none;
+}
+.rooms{
+  margin:0 0 10px 0;
+}
+.parking{
+  margin:0;
+}
+.all-info{
+  display: block;
+  text-align: center;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+.text-info{
+  margin-bottom: 15px;
+}
+.address{
+  margin-bottom: 15px;
+}
+.map iframe{
+  width: 400px;
+  height: 400px;
+}
+.footer-home p{
+  font-size: 13px;
+  justify-content: flex-start;
+}
+.footer p{
+  font-size: 13px;
+  justify-content: flex-start;
+}
+}
+@media screen and (max-width: 480px) {
+
+nav a{
+  font-size: 13px;
+}
+.content-home{
+  font-size: 1em;
+  letter-spacing: 0.5px;
+}
+.content-home button {
+  padding: 13px 30px;
+  font-size: 12px;
+}
+.content-contact h1,h2{
+  font-size: 20px;
+}
+.update-window{
+  max-width: 320px;
+}
+.update-window h3{
+  font-size: 14px;
+}
+.content-booking h1{
+  font-size: 1.5em;
+}
+.booking p{
+  font-size: 16px;
+}
+.all-info{
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+.address{
+  margin-bottom: 10px;
+}
+.transport{
+  margin-bottom: 10px;
+}
+.map iframe{
+  width: 300px;
+  height: 300px;
+}
+.footer-home p{
+  font-size: 10px;
+  justify-content: flex-start;
+}
+.footer p{
+  font-size: 10px;
+  justify-content: flex-start;
+}
+}
+/*
+ * 1. Avoid the IE 10-11 `min-height` bug.
+ * 2. Set `flex-shrink` to `0` to prevent Chrome, Opera, and Safari from
+ *    letting these items shrink to smaller than their content's default
+ *    minimum size.
+ 
+.Site {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; (1)
+}
+.Site-header,
+.Site-footer {
+  flex-shrink: 0; (2)
+}
+.Site-content {
+  flex: 1 0 auto;  (2)
+}
+*/

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Hotel Arko</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper"> <!-- wrapper starts -->
+      <div class="header">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li> 
+          </ul>
+        </nav>
+      </div>
+      <div class="content-contact">
+        <h1>Contact Information</h1>
+        <div class="all-info">
+          <div class="text-info">
+            <div class="address">
+              <h2>Hotel ARKO***</h2>
+                <br>
+              <p>
+                <strong>Address:</strong>
+                <br>Vysočanská 484/87
+                <br>190 00 Praha 9 
+              </p>
+              <p> 
+                <br>Tel.: +420 281 868 335
+                <br>
+                <br>Hurdia s.r.o
+                <br>IČ: 02922967
+                <br>DIČ: CZ02922967
+              <p>
+              </div>
+              <div class="transport">
+                <h2>Public transport</h2>
+                <p> 
+                <br><strong>Střížkov</strong> METRO - line C, 5 minute walk
+                <br>BUS stop near the hotel is <strong>Sídliště Prosek</strong> 
+                <br>Bus 152, 166, 177 and 183
+                </p>
+              </div>
+          </div>           
+            <div class="contact-form">
+              <h2>Contact us</h2>
+              <div id="error_message"></div>
+              <form id="myform" action="https://formspree.io/mvobvyee" method="POST" onsubmit="return validation()">
+                <div class="input_field">
+                  <input type="text" placeholder="Name" id="name" name="name">
+                </div>
+                <div class="input_field">
+                  <input type="text" placeholder="Subject" id="subject" name="subject">
+                </div>
+                <div class="input_field">
+                  <input type="text" placeholder="Email" id="email" name="_replyto">
+                </div>
+                 <div class="input_field">
+                  <textarea id="message" placeholder="Message" name="message"></textarea>
+                </div>
+                <div class="btn">
+                  <input type="submit">
+                </div>
+              </form>
+            </div>  
+        </div>
+        <div class="map">
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10231.924640500309!2d14.4907811!3d50.1240745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xea5dd19f15eded45!2sHotel%20Arko!5e0!3m2!1sen!2suk!4v1582292222851!5m2!1sen!2suk" width="0" height="0" frameborder="" style="border:0;" allowfullscreen=""></iframe></p>
+            </div> 
+      </div>
+      <div class="footer">
+          <p>&#169; 2020 Hotel Arko</p>
+          <p><a href="https://svejdam.com" target="_blank">Design by svejdam</a></p>
+      </div>
+    </div>   <!--wrapper ends-->  
+    <script src="scriptform.js"></script>  
+  </body>
+</html>

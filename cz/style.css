@@ -84,7 +84,8 @@ nav a {
   font-weight: 300;
   margin: 20px;
 }
-.content-home button {
+.content-home .btn {
+  display: inline-block;
   background-color: #19AACC;
   border: none;
   color: white;
@@ -97,22 +98,12 @@ nav a {
   border:solid 2px white;
   cursor: pointer;
 }
-.content-home button:hover {
-  background-color: white;
-  color: #19AACC;
+.content-home a{
+  text-decoration: none;
+  color: white;
 }
-.update-window{
-  max-width: 400px;
-  font-size: 15px;
-  background-color: #19AACC;
-  margin: auto;
-  margin-top: 50px;
-  padding:15px;
-  border: solid 2px white;
-}
-.update-window h3 {
-  font-weight: 900;
-  text-transform: uppercase;
+.img-wine{
+  margin-top: 70px;
 }
 .content-about{
   color: #4E5556;
